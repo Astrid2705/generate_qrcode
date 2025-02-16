@@ -70,19 +70,41 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Deskripsi
 
 Instalasi dan Menjalankan Project
-1.Buat Project Laravel :
+1. Buat Project Laravel :
     composer create-project laravel/laravel qr-code-generator
-2.Masuk ke Direktori Project :
+2. Masuk ke Direktori Project :
     cd qr-code-generator
-3.Buka dengan Code Editor:
+3. Buka dengan Code Editor:
     code .
-4.Install Package QR Code (terminal vscode) :
+4. Install Package QR Code (terminal vscode) :
     composer require simplesoftwareio/simple-qrcode
-5.Buat Controller untuk QR Code :
+5. Buat Controller untuk QR Code :
     php artisan make:controller QrCodeController
-6.Ubah Controller QrCodeController.php
-7.Buat Route di routes/web.php
-8.Buat View di resources/views/qr-code.blade.php
-9.Jalankan Server Laravel
+6. Ubah Controller QrCodeController.php
+7. Buat Route di routes/web.php
+8. Buat View di resources/views/qr-code.blade.php
+9. Jalankan Server Laravel
 
-![Tampilan QR Code Generator](public/images/Screenshot 2025-02-07 194607.png)
+## Fitur yang Tersedia
+
+a. Upload Tanda Tangan Digital
+
+1. Buka halaman utama.
+
+2. Pilih file tanda tangan (format: PNG, JPG, JPEG, maksimal 2MB).
+
+3. Klik tombol Upload.
+
+4. Tanda tangan akan muncul setelah berhasil diunggah.
+
+b. Generate QR Code
+
+1. Masukkan teks atau URL di form QR Code Generator.
+
+2. Pilih ukuran QR Code (100x100, 200x200, 300x300).
+
+3. Klik tombol Generate QR Code.
+
+4. QR Code akan muncul di halaman.
+
+![Tampilan QR Code Generator](public/images/Screenshot 2025-02-16 215844)
